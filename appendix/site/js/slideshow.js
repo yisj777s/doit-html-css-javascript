@@ -13,3 +13,15 @@ function showSlides(n) {
   }
   slides[n].style.display = "block"; // n번째 이미지만 화면에 표시
 }
+
+function prevSlide() {
+  if(current > 0) current -= 1; // current값이 0보다 크면 이전 위치로
+  else current = slides.length - 1; // 그렇지 않으면(첫 번째 이미지미으로) 마지막 위치로
+  showSlides(current); // 이동한 위치로 이미지 표시
+}
+
+function nextSlide() {
+  if(current < slides.length - 1) current += 1; // current 값이 2보다 작으면 다음 위치로
+  else current = 0; // 그렇지 않다면(마지막 이미지이므로) 첫 번째 위치로 이동
+    showSlides(current); // 이동한 위치의 이미지 표시
+}
