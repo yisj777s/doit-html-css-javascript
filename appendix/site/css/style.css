@@ -86,7 +86,7 @@ nav {
   position: absolute; /* 서브메뉴 포지셔닝 */
   width: 160px;
   background-color: rgba(255, 255, 255, 0.6); /* 배경 투명색 지정 */
-  left: 0;
+  left: 20px;
   margin: 0;
 }
 #topMenu > li > ul > li {
@@ -99,8 +99,11 @@ nav {
 }
 #topMenu > li:hover > ul {
   display: block; /* 메인 메뉴 항목 위로 오버하면 서브메뉴 표시 */
+  z-index: 10; /* 슬라이드 쇼에 가리지 않게 조절 */
 }
-
+#topMenu > li > ul > li > a:hover {
+  color: #f00; /* 서브메뉴 마우스 오버하면 색상 바꾸기 */
+}
 /* 콘텐츠 영역 */
 #contents {
   width: 100%; /* 너비 */
