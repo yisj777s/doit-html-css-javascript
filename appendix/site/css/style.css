@@ -148,6 +148,7 @@ button:focus {
   float: left; /* 왼쪽으로 플로팅 */
   width: 600px; /* 너비 */
   height: 100%; /* 높이 */
+  margin-top: 10px; /* 탭 메누 위쪽에 여백 두기 */
 }
 #tabMenu input[type="radio"] {
   display: none; /* 라디오 버튼 감춤 */
@@ -188,6 +189,9 @@ button:focus {
 }
 #gallery ul li {
   display: inline; /* 이미지 가로로 배치 */
+}
+#tab1:checked ~ #notice, #tab2:checked ~ #gallery {
+  display: block;
 }
 /* 퀵 링크 영역 */
 #links {
