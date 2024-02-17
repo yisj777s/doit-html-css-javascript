@@ -198,7 +198,16 @@ button:focus {
   float: right; /* 오른쪽으로 플로팅 */
   width: 600px; /* 너비 */
   height: 100%; /* 높이 */
-  background-color: skyblue;
+}
+#links ul {
+  padding: 0;
+  overflow: hidden; /* 넘치는 항목은 감춤 */
+}
+#links ul li {
+  float: left; /* 가로로 배치 */
+  width: 33%; /* 세 항목의 영역을 균일하게 지정 */
+  text-align: center; /* 가운데 정렬 */
+  margin: 10px 0; /* 마진 */
 }
 
 /* 푸터 영역 */
