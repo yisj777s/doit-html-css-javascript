@@ -141,6 +141,7 @@ button:focus {
 #contents {
   width: 100%; /* 너비 */
   height: 300px; /* 높이 */
+  margin-top: 20px; /* 마진 추가 */
 }
 
 /* 탭 메뉴 영역 */
@@ -198,6 +199,7 @@ button:focus {
   float: right; /* 오른쪽으로 플로팅 */
   width: 600px; /* 너비 */
   height: 100%; /* 높이 */
+  margin-top: 15px; /* 마진 추가 */
 }
 #links ul {
   padding: 0;
