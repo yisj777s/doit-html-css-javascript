@@ -239,5 +239,30 @@ button:focus {
 footer {
   width: 100%; /* 너비 */
   height: 100px; /* 높이 */
-  background-color: gray;
+  border-top: 2px solid #222; /* 위쪽에 가로선 추가 */
 }
+#bottomMenu {
+  width: 100%;
+  height: 20px;
+}
+#bottomMenu ul {
+  margin-top: 15px;
+}
+#bottomMenu ul li {
+  float: left; /* 가로로 배치 */
+  padding: 5px 20px;
+  border-right: 1px solid #ddd; /* 항목 오른쪽에 세로선 */
+}
+#bottomMenu ul li:last-child {
+  border-right: none; /* 마지막 항목에는 오른쪽 세로선 없음 */
+}
+#bottomMenu ul li a, #bottomMenu ul li a:visited {
+  font-size: 15px; /* 폰트 크기 */
+  color: #666; /* 폰트 색상 */
+}
+#bottomMenu ul li a:hover { /* 내가 추가한 코드 */
+ font-size: 18px; /* 폰트 크기 */
+ font-weight: bold; /* 폰트 굵기 */
+ color:orange;
+}
+
