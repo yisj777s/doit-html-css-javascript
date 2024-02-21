@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>레드향 주문하기</title>
+  <style>
+    /*'주문하기','취소하기' 버튼 */
+    form > div {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-around;
+    }
+    form > div > button {
+        text-align: center;
+        width: 150px;
+        height: 40px;
+        background-color: #fafafa;
+        border: 1px solid #ccc;
+        box-shadow: 1px 1px 1px #ccc;
+    }
+    form > div > button:first-of-type{
+        background-color: #435fff;
+        color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <form>
+        <!--생략-->
+      <div>
+        <button type="submit">주문하기</button>
+        <button type="reset">취소하기</button>
+      </div>   
+      <!--생략-->     
+    </form>
+  </div>
+</body>
+</html>

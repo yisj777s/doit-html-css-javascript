@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Array 객체의 메서드</title>
+</head>
+<body>
+	<script>
+    // 요소 추가하기 - 새로운 length 값 반환
+    var nums = [1, 2, 3];
+
+    var ret1 = nums.push(4, 5); // 배열 맨 끝에 새로운 요소를 추가
+    document.write("length: ", ret1, " | 배열: ", nums);
+    document.write("<br>");
+    var ret2 = nums.unshift(0); // 배열 맨 앞에 새로운 요소를 추가
+    document.write("length: ", ret2, " | 배열: ", nums);
+	</script>
+</body>
+</html>
